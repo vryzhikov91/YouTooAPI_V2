@@ -19,7 +19,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet("{deleteId}")]
-        public IEnumerable<BaseResponse> Get(int deleteId)
+        public IEnumerable<BaseResponse<PostOutputModel>> Get(int deleteId)
         {
             throw new NotImplementedException();
         }
@@ -39,7 +39,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet]
-        public IEnumerable<BaseResponse> Get()
+        public IEnumerable<BaseResponseList<PostOutputModel>> Get()
         {
             throw new NotImplementedException();
         }
@@ -68,9 +68,6 @@ namespace YouTooAPI_V2.Controllers
         {
             throw new NotImplementedException();
         }
-
-        
-        
     }
 
     public class PostQuestionInput

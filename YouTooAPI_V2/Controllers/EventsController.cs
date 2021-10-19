@@ -19,7 +19,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet("{eventId}")]
-        public IEnumerable<BaseResponse> Get(int eventId)
+        public IEnumerable<BaseResponse<EventOutputModel>> Get(int eventId)
         {
             throw new NotImplementedException();
         }
@@ -39,7 +39,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet]
-        public IEnumerable<BaseResponse> Get()
+        public IEnumerable<BaseResponseList<EventOutputModel>> Get()
         {
             throw new NotImplementedException();
         }
@@ -52,7 +52,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>Event ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPost]
-        public Task<IActionResult> Update([FromBody] EventInputModel model)
+        public Task<BaseResponse<EventOutputModel>> Update([FromBody] EventInputModel model)
         {
             throw new NotImplementedException();
         }
@@ -75,7 +75,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response with Question output model</returns>
         [HttpGet("{eventId:int}/Questions")]
-        public IEnumerable<BaseResponse> GetQuestion(int eventId)
+        public IEnumerable<BaseResponseList<EventQuestionOutput>> GetQuestion(int eventId)
         {
             throw new NotImplementedException();
         }
@@ -111,7 +111,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response with Question output model</returns>
         [HttpGet("{eventId:int}/Attendees")]
-        public IEnumerable<BaseResponse> GetAttendees(int eventId)
+        public IEnumerable<BaseResponseList<EventQuestionOutput>> GetAttendees(int eventId)
         {
             throw new NotImplementedException();
         }

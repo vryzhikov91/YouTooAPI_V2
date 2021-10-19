@@ -2,7 +2,7 @@
 
 namespace YouTooAPI_V2.Models
 {
-    public class BaseResponse<T>
+    public class BaseResponseList<T> 
     {
         /// <summary>
         /// Error list, must be empty
@@ -11,7 +11,7 @@ namespace YouTooAPI_V2.Models
         /// <summary>
         /// Data dto or list dto
         /// </summary>
-        public T Data { get; set; }
+        public List<T> Data { get; set; }
         
     }
 }

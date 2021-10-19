@@ -29,7 +29,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response GroupMember dto</returns>
         [HttpGet]
-        public IEnumerable<BaseResponse> Get()
+        public IEnumerable<BaseResponseList<GroupOutputModel>> Get()
         {
             throw new NotImplementedException();
         }

@@ -19,7 +19,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet("{conversationId:int}")]
-        public IEnumerable<BaseResponse> Get(int conversationId)
+        public IEnumerable<BaseResponseList<ConversationOutputModel>> Get(int conversationId)
         {
             throw new NotImplementedException();
         }
@@ -39,7 +39,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet]
-        public IEnumerable<BaseResponse> Get()
+        public IEnumerable<BaseResponse<ConversationOutputModel>> Get()
         {
             throw new NotImplementedException();
         }
@@ -79,6 +79,7 @@ namespace YouTooAPI_V2.Controllers
         public int? GroupId { get; set; }
         public DateTime Date { get; set; }
         public bool IsAdministrative { get; set; }
+        public DateTime MutedTo { get; set; }
         public ConversationStatus ConversationStatus { get; set; }
         public bool IsPined { get; set; }
     }
@@ -92,6 +93,7 @@ namespace YouTooAPI_V2.Controllers
         public int? GroupId { get; set; }
         public DateTime Date { get; set; }
         public bool IsAdministrative { get; set; }
+        public DateTime MutedTo { get; set; }
         public ConversationStatus ConversationStatus { get; set; }
         public bool IsPined { get; set; }
     }
@@ -100,7 +102,7 @@ namespace YouTooAPI_V2.Controllers
     {
         Muted,
         UnMuted
-        
+
         //TODO: what other statuses are needed? can make bool value
     }
 }

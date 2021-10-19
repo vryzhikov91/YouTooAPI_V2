@@ -19,7 +19,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet("{meetingId}")]
-        public IEnumerable<BaseResponse> Get(int meetingId)
+        public IEnumerable<BaseResponse<MeetingOutputModel>> Get(int meetingId)
         {
             throw new NotImplementedException();
         }

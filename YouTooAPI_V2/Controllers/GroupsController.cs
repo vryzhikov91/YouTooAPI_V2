@@ -19,7 +19,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet("{id}")]
-        public IEnumerable<BaseResponse> Get(int Id)
+        public IEnumerable<BaseResponse<GroupOutputModel>> Get(int Id)
         {
             throw new NotImplementedException();
         }
@@ -39,7 +39,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet]
-        public IEnumerable<BaseResponse> Get()
+        public IEnumerable<BaseResponseList<GroupOutputModel>> Get()
         {
             throw new NotImplementedException();
         }
