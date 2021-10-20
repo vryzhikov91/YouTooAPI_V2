@@ -29,7 +29,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpDelete("{eventId:int}")]
-        public IEnumerable<IActionResult> Delete(int eventId)
+        public IEnumerable<BaseResponse<Guid>> Delete(int eventId)
         {
             throw new NotImplementedException();
         }
@@ -52,7 +52,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>Group ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPost]
-        public Task<IActionResult> Update([FromBody] GroupInputModel model)
+        public Task<BaseResponse<Guid>> Update([FromBody] GroupInputModel model)
         {
             throw new NotImplementedException();
         }
@@ -64,7 +64,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>Group ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPut]
-        public Task<IActionResult> Create([FromBody] GroupInputModel model)
+        public Task<BaseResponse<Guid>> Create([FromBody] GroupInputModel model)
         {
             throw new NotImplementedException();
         }

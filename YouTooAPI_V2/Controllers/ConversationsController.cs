@@ -52,7 +52,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>Conversation ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPost]
-        public Task<IActionResult> Update([FromBody] ConversationInputModel model)
+        public Task<BaseResponse<Guid>> Update([FromBody] ConversationInputModel model)
         {
             throw new NotImplementedException();
         }
@@ -64,7 +64,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>Conversation ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPut]
-        public Task<IActionResult> Create([FromBody] ConversationInputModel model)
+        public Task<BaseResponse<Guid>> Create([FromBody] ConversationInputModel model)
         {
             throw new NotImplementedException();
         }
@@ -100,8 +100,12 @@ namespace YouTooAPI_V2.Controllers
 
     public enum ConversationStatus
     {
-        Muted,
-        UnMuted
+        Unmuted,
+        MuteAlways,
+        MuteFor1Hour = 5,
+        MuteFor8Hours = 10,
+        MuteFor2Days = 15,
+        MuteFor1Week = 20,
 
         //TODO: what other statuses are needed? can make bool value
     }

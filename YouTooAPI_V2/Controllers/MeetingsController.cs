@@ -41,7 +41,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>Meeting ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPost]
-        public Task<IActionResult> Update([FromBody] MeetingInputModel model)
+        public Task<BaseResponse<Guid>> Update([FromBody] MeetingInputModel model)
         {
             throw new NotImplementedException();
         }
@@ -53,7 +53,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>Meeting ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPut]
-        public Task<IActionResult> Create([FromBody] MeetingInputModel model)
+        public Task<BaseResponse<Guid>> Create([FromBody] MeetingInputModel model)
         {
             throw new NotImplementedException();
         }
