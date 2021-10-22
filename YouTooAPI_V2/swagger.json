@@ -106,6 +106,25 @@
         "tags": [
           "Conversations"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConversationFilterBaseRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConversationFilterBaseRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConversationFilterBaseRequest"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success",
@@ -332,6 +351,25 @@
         "tags": [
           "Events"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EventFilterBaseRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EventFilterBaseRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EventFilterBaseRequest"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success",
@@ -723,6 +761,25 @@
         "tags": [
           "GroupMembers"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GroupMemberFilterBaseRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GroupMemberFilterBaseRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GroupMemberFilterBaseRequest"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success",
@@ -731,7 +788,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GroupOutputModelBaseResponseList"
+                    "$ref": "#/components/schemas/GroupMemberOutputModelBaseResponseList"
                   }
                 }
               },
@@ -739,7 +796,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GroupOutputModelBaseResponseList"
+                    "$ref": "#/components/schemas/GroupMemberOutputModelBaseResponseList"
                   }
                 }
               },
@@ -747,7 +804,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GroupOutputModelBaseResponseList"
+                    "$ref": "#/components/schemas/GroupMemberOutputModelBaseResponseList"
                   }
                 }
               }
@@ -921,7 +978,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GuidBaseResponse"
+                    "$ref": "#/components/schemas/IActionResult"
                   }
                 }
               },
@@ -929,7 +986,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GuidBaseResponse"
+                    "$ref": "#/components/schemas/IActionResult"
                   }
                 }
               },
@@ -937,7 +994,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GuidBaseResponse"
+                    "$ref": "#/components/schemas/IActionResult"
                   }
                 }
               }
@@ -1369,6 +1426,25 @@
         "tags": [
           "Posts"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostFilterBaseResponseBaseRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostFilterBaseResponseBaseRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostFilterBaseResponseBaseRequest"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success",
@@ -1519,8 +1595,7 @@
           },
           "groupId": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "date": {
             "type": "string",
@@ -1564,6 +1639,35 @@
       },
       "IActionResult": {
         "type": "object",
+        "additionalProperties": false
+      },
+      "ConversationFilter": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConversationFilterBaseRequest": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "pageCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "filter": {
+            "$ref": "#/components/schemas/ConversationFilter"
+          }
+        },
         "additionalProperties": false
       },
       "ConversationOutputModelBaseResponse": {
@@ -1699,6 +1803,49 @@
         },
         "additionalProperties": false
       },
+      "EventFilter": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EventFilterBaseRequest": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "pageCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "filter": {
+            "$ref": "#/components/schemas/EventFilter"
+          }
+        },
+        "additionalProperties": false
+      },
       "EventOutputModelBaseResponseList": {
         "type": "object",
         "properties": {
@@ -1822,6 +1969,134 @@
         },
         "additionalProperties": false
       },
+      "MemberStatus": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "MemberRole": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "GroupMemberFilter": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "memberStatus": {
+            "$ref": "#/components/schemas/MemberStatus"
+          },
+          "memberRole": {
+            "$ref": "#/components/schemas/MemberRole"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GroupMemberFilterBaseRequest": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "pageCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "filter": {
+            "$ref": "#/components/schemas/GroupMemberFilter"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GroupMemberOutputModel": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "groupMemberId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "profilePictureId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "memberStatus": {
+            "$ref": "#/components/schemas/MemberStatus"
+          },
+          "memberRole": {
+            "$ref": "#/components/schemas/MemberRole"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GroupMemberOutputModelBaseResponseList": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GroupMemberOutputModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GroupMemberInputModel": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "groupMemberId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "memberStatus": {
+            "$ref": "#/components/schemas/MemberStatus"
+          },
+          "memberRole": {
+            "$ref": "#/components/schemas/MemberRole"
+          }
+        },
+        "additionalProperties": false
+      },
       "GroupOutputModel": {
         "type": "object",
         "properties": {
@@ -1835,10 +2110,6 @@
             "nullable": true
           },
           "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "administrators": {
             "type": "string",
             "nullable": true
           },
@@ -1872,6 +2143,22 @@
         },
         "additionalProperties": false
       },
+      "GroupOutputModelBaseResponse": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/GroupOutputModel"
+          }
+        },
+        "additionalProperties": false
+      },
       "GroupOutputModelBaseResponseList": {
         "type": "object",
         "properties": {
@@ -1892,65 +2179,6 @@
         },
         "additionalProperties": false
       },
-      "MemberStatus": {
-        "enum": [
-          0,
-          1,
-          2,
-          3
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "MemberRole": {
-        "enum": [
-          0,
-          1
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "GroupMemberInputModel": {
-        "type": "object",
-        "properties": {
-          "groupId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "groupMemberId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "memberStatus": {
-            "$ref": "#/components/schemas/MemberStatus"
-          },
-          "memberRole": {
-            "$ref": "#/components/schemas/MemberRole"
-          }
-        },
-        "additionalProperties": false
-      },
-      "GroupOutputModelBaseResponse": {
-        "type": "object",
-        "properties": {
-          "errors": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "data": {
-            "$ref": "#/components/schemas/GroupOutputModel"
-          }
-        },
-        "additionalProperties": false
-      },
       "GroupInputModel": {
         "type": "object",
         "properties": {
@@ -1964,10 +2192,6 @@
             "nullable": true
           },
           "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "administrators": {
             "type": "string",
             "nullable": true
           },
@@ -2113,6 +2337,54 @@
           },
           "data": {
             "$ref": "#/components/schemas/PostOutputModel"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostFilter": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "postStatus": {
+            "$ref": "#/components/schemas/PostStatus"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostFilterBaseResponse": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/PostFilter"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostFilterBaseResponseBaseRequest": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "pageCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "filter": {
+            "$ref": "#/components/schemas/PostFilterBaseResponse"
           }
         },
         "additionalProperties": false
