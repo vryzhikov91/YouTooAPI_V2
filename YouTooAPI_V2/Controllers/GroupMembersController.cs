@@ -29,7 +29,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response GroupMember dto</returns>
         [HttpGet]
-        public IEnumerable<BaseResponseList<GroupOutputModel>> Get()
+        public IEnumerable<BaseResponseList<GroupMemberOutputModel>> Get([FromBody] BaseRequest<GroupMemberFilter> request)
         {
             throw new NotImplementedException();
         }
@@ -61,6 +61,13 @@ namespace YouTooAPI_V2.Controllers
         
     }
 
+    public class GroupMemberFilter
+    {
+        public int GroupId { get; set; }
+        public MemberStatus? MemberStatus { get; set; }
+        public MemberRole? MemberRole { get; set; }
+    }
+
     /// <summary>
     /// Base groupMember input model
     /// </summary>
@@ -76,7 +83,8 @@ namespace YouTooAPI_V2.Controllers
     public enum MemberRole
     {
         Member,
-        Administrator
+        Administrator,
+        Owner
     }
 
 

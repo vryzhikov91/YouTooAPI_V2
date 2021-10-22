@@ -39,7 +39,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet]
-        public IEnumerable<BaseResponseList<PostOutputModel>> Get()
+        public IEnumerable<BaseResponseList<PostOutputModel>> Get([FromBody] BaseRequest<BaseResponse<PostFilter>> request)
         {
             throw new NotImplementedException();
         }
@@ -68,6 +68,12 @@ namespace YouTooAPI_V2.Controllers
         {
             throw new NotImplementedException();
         }
+    }
+
+    public class PostFilter
+    {
+        public int GroupId { get; set; }
+        public PostStatus? PostStatus {get; set; }
     }
 
     public class PostQuestionInput

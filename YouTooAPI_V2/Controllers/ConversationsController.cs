@@ -39,7 +39,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet]
-        public IEnumerable<BaseResponse<ConversationOutputModel>> Get()
+        public IEnumerable<BaseResponse<ConversationOutputModel>> Get([FromBody] BaseRequest<ConversationFilter> request)
         {
             throw new NotImplementedException();
         }
@@ -70,6 +70,11 @@ namespace YouTooAPI_V2.Controllers
         }
     }
 
+    public class ConversationFilter
+    {
+        public int GroupId { get; set; }
+    }
+
     /// <summary>
     /// Base conversation input model
     /// </summary>
@@ -90,7 +95,7 @@ namespace YouTooAPI_V2.Controllers
     public class ConversationOutputModel
     {
         public int? ConversationId { get; set; }
-        public int? GroupId { get; set; }
+        public int GroupId { get; set; }
         public DateTime Date { get; set; }
         public bool IsAdministrative { get; set; }
         public DateTime MutedTo { get; set; }

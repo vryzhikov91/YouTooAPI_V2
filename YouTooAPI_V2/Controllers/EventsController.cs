@@ -39,7 +39,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpGet]
-        public IEnumerable<BaseResponseList<EventOutputModel>> Get()
+        public IEnumerable<BaseResponseList<EventOutputModel>> Get([FromBody] BaseRequest<EventFilter> request)
         {
             throw new NotImplementedException();
         }
@@ -116,6 +116,16 @@ namespace YouTooAPI_V2.Controllers
             throw new NotImplementedException();
         }
     }
+
+    public class EventFilter
+    {
+        public int GroupId { get; set; }
+        public DateTime? StartDateTime { get; set; }
+        public DateTime? EndDateTime { get; set; }
+        public bool? IsActive { get; set; }
+    }
+
+
 
     public class EventQuestionInput
     {

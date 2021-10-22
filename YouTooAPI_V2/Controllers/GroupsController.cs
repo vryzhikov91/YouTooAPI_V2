@@ -29,7 +29,7 @@ namespace YouTooAPI_V2.Controllers
         /// </summary>
         /// <returns>Base response dto</returns>
         [HttpDelete("{eventId:int}")]
-        public IEnumerable<BaseResponse<Guid>> Delete(int eventId)
+        public IEnumerable<IActionResult> Delete(int eventId)
         {
             throw new NotImplementedException();
         }
@@ -78,7 +78,6 @@ namespace YouTooAPI_V2.Controllers
         public int? GroupId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public string Administrators { get; set; }
         public int MembersCount { get; set; }
         public int PhotoId { get; set; }
         public string Phone { get; set; }
@@ -96,7 +95,6 @@ namespace YouTooAPI_V2.Controllers
         public int? GroupId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public string Administrators { get; set; }
         public int MembersCount { get; set; }
         public int PhotoId { get; set; }
         public string Phone { get; set; }
