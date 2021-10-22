@@ -17,14 +17,14 @@ namespace YouTooAPI_V2.WebSocketHubs
         }
 
         [SignalRMethod(name: "Update", operationType: OperationType.Put)]
-        private Task Update(ChatMessageDto chatMessage, int conversationId,
+        public Task Update(ChatMessageDto chatMessage, int conversationId,
              int anchorId)
         {
             throw new NotImplementedException();
         }
         
-        [SignalRMethod(name: "", operationType: OperationType.Post)]
-        protected Task NewChatMessage(ChatMessageDto chatMessage,  int conversationId, int anchorId)
+        [SignalRMethod(name: "AddMessage", operationType: OperationType.Post)]
+        public Task NewChatMessage(ChatMessageDto chatMessage,  int conversationId, int anchorId)
         {
             throw new NotImplementedException();
         }

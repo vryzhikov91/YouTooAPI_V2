@@ -1607,6 +1607,22 @@
           }
         }
       }
+    },
+    "/hubs/ChatHub/Update   ": {
+      "put": {
+        "tags": [
+          "ChatHub"
+        ],
+        "responses": { }
+      }
+    },
+    "/hubs/ChatHub/AddMessage   ": {
+      "post": {
+        "tags": [
+          "ChatHub"
+        ],
+        "responses": { }
+      }
     }
   },
   "components": {
