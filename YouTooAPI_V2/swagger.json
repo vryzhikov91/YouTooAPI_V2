@@ -186,17 +186,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -232,17 +232,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -477,17 +477,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -583,17 +583,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -640,17 +640,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -841,17 +841,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -887,17 +887,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -1069,17 +1069,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -1115,17 +1115,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -1259,17 +1259,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -1305,17 +1305,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -1506,17 +1506,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               }
             }
@@ -1552,17 +1552,55 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GuidBaseResponse"
+                  "$ref": "#/components/schemas/Int32BaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/hubs/ChatHub/Get message  ": {
+      "get": {
+        "tags": [
+          "ChatHub"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChatMessageDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChatMessageDto"
+                  }
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChatMessageDto"
+                  }
                 }
               }
             }
@@ -1573,27 +1611,26 @@
   },
   "components": {
     "schemas": {
-      "ConversationStatus": {
-        "enum": [
-          0,
-          1,
-          5,
-          10,
-          15,
-          20
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "ConversationOutputModel": {
+      "ChatMessageDto": {
         "type": "object",
         "properties": {
-          "conversationId": {
+          "id": {
             "type": "integer",
-            "format": "int32",
+            "format": "int32"
+          },
+          "text": {
+            "type": "string",
             "nullable": true
           },
-          "groupId": {
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "conversationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userProfileId": {
             "type": "integer",
             "format": "int32"
           },
@@ -1601,44 +1638,11 @@
             "type": "string",
             "format": "date-time"
           },
-          "isAdministrative": {
-            "type": "boolean"
-          },
-          "mutedTo": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "conversationStatus": {
-            "$ref": "#/components/schemas/ConversationStatus"
-          },
-          "isPined": {
-            "type": "boolean"
+          "memberIds": {
+            "type": "integer",
+            "format": "int32"
           }
         },
-        "additionalProperties": false
-      },
-      "ConversationOutputModelBaseResponseList": {
-        "type": "object",
-        "properties": {
-          "errors": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "data": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ConversationOutputModel"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "IActionResult": {
-        "type": "object",
         "additionalProperties": false
       },
       "ConversationFilter": {
@@ -1666,22 +1670,6 @@
           },
           "filter": {
             "$ref": "#/components/schemas/ConversationFilter"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ConversationOutputModelBaseResponse": {
-        "type": "object",
-        "properties": {
-          "errors": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "data": {
-            "$ref": "#/components/schemas/ConversationOutputModel"
           }
         },
         "additionalProperties": false
@@ -1719,7 +1707,39 @@
         },
         "additionalProperties": false
       },
-      "GuidBaseResponse": {
+      "ConversationOutputModel": {
+        "type": "object",
+        "properties": {
+          "conversationId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "groupId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isAdministrative": {
+            "type": "boolean"
+          },
+          "mutedTo": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "conversationStatus": {
+            "$ref": "#/components/schemas/ConversationStatus"
+          },
+          "isPined": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConversationOutputModelBaseResponse": {
         "type": "object",
         "properties": {
           "errors": {
@@ -1730,8 +1750,129 @@
             "nullable": true
           },
           "data": {
+            "$ref": "#/components/schemas/ConversationOutputModel"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConversationOutputModelBaseResponseList": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ConversationOutputModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConversationStatus": {
+        "enum": [
+          0,
+          1,
+          5,
+          10,
+          15,
+          20
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "EventFilter": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDateTime": {
             "type": "string",
-            "format": "uuid"
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EventFilterBaseRequest": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "pageCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "filter": {
+            "$ref": "#/components/schemas/EventFilter"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EventInputModel": {
+        "type": "object",
+        "properties": {
+          "eventId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "groupId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "startDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "photoId": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -1803,49 +1944,6 @@
         },
         "additionalProperties": false
       },
-      "EventFilter": {
-        "type": "object",
-        "properties": {
-          "groupId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "startDateTime": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "endDateTime": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "isActive": {
-            "type": "boolean",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "EventFilterBaseRequest": {
-        "type": "object",
-        "properties": {
-          "pageNumber": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "pageCount": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "filter": {
-            "$ref": "#/components/schemas/EventFilter"
-          }
-        },
-        "additionalProperties": false
-      },
       "EventOutputModelBaseResponseList": {
         "type": "object",
         "properties": {
@@ -1866,49 +1964,16 @@
         },
         "additionalProperties": false
       },
-      "EventInputModel": {
+      "EventQuestionInput": {
         "type": "object",
         "properties": {
-          "eventId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "groupId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "startDateTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "endDateTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "title": {
+          "question": {
             "type": "string",
             "nullable": true
           },
-          "description": {
+          "answer": {
             "type": "string",
             "nullable": true
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
-          },
-          "location": {
-            "type": "string",
-            "nullable": true
-          },
-          "photoId": {
-            "type": "string",
-            "nullable": true
-          },
-          "isActive": {
-            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -1955,38 +2020,51 @@
         },
         "additionalProperties": false
       },
-      "EventQuestionInput": {
+      "GroupInputModel": {
         "type": "object",
         "properties": {
-          "question": {
+          "groupId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "title": {
             "type": "string",
             "nullable": true
           },
-          "answer": {
+          "description": {
             "type": "string",
             "nullable": true
+          },
+          "membersCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "photoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "website": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
-      },
-      "MemberStatus": {
-        "enum": [
-          0,
-          1,
-          2,
-          3
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "MemberRole": {
-        "enum": [
-          0,
-          1,
-          2
-        ],
-        "type": "integer",
-        "format": "int32"
       },
       "GroupMemberFilter": {
         "type": "object",
@@ -2019,6 +2097,31 @@
           },
           "filter": {
             "$ref": "#/components/schemas/GroupMemberFilter"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GroupMemberInputModel": {
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "groupMemberId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "memberStatus": {
+            "$ref": "#/components/schemas/MemberStatus"
+          },
+          "memberRole": {
+            "$ref": "#/components/schemas/MemberRole"
           }
         },
         "additionalProperties": false
@@ -2068,31 +2171,6 @@
               "$ref": "#/components/schemas/GroupMemberOutputModel"
             },
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "GroupMemberInputModel": {
-        "type": "object",
-        "properties": {
-          "groupId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "groupMemberId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "memberStatus": {
-            "$ref": "#/components/schemas/MemberStatus"
-          },
-          "memberRole": {
-            "$ref": "#/components/schemas/MemberRole"
           }
         },
         "additionalProperties": false
@@ -2179,48 +2257,42 @@
         },
         "additionalProperties": false
       },
-      "GroupInputModel": {
+      "IActionResult": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "Int32BaseResponse": {
         "type": "object",
         "properties": {
-          "groupId": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "data": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MeetingInputModel": {
+        "type": "object",
+        "properties": {
+          "meetingId": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
+          "eventId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "title": {
             "type": "string",
             "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "membersCount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "photoId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "phone": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "website": {
-            "type": "string",
-            "nullable": true
-          },
-          "address": {
-            "type": "string",
-            "nullable": true
-          },
-          "isActive": {
-            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -2267,26 +2339,7 @@
         },
         "additionalProperties": false
       },
-      "MeetingInputModel": {
-        "type": "object",
-        "properties": {
-          "meetingId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "eventId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "title": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "PostStatus": {
+      "MemberRole": {
         "enum": [
           0,
           1,
@@ -2295,51 +2348,15 @@
         "type": "integer",
         "format": "int32"
       },
-      "PostOutputModel": {
-        "type": "object",
-        "properties": {
-          "postId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "groupId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "postStatus": {
-            "$ref": "#/components/schemas/PostStatus"
-          },
-          "postStatusUpdatedOnUtc": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "PostOutputModelBaseResponse": {
-        "type": "object",
-        "properties": {
-          "errors": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "data": {
-            "$ref": "#/components/schemas/PostOutputModel"
-          }
-        },
-        "additionalProperties": false
+      "MemberStatus": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "PostFilter": {
         "type": "object",
@@ -2389,26 +2406,6 @@
         },
         "additionalProperties": false
       },
-      "PostOutputModelBaseResponseList": {
-        "type": "object",
-        "properties": {
-          "errors": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "data": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/PostOutputModel"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "PostInputModel": {
         "type": "object",
         "properties": {
@@ -2438,6 +2435,81 @@
           }
         },
         "additionalProperties": false
+      },
+      "PostOutputModel": {
+        "type": "object",
+        "properties": {
+          "postId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "groupId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "postStatus": {
+            "$ref": "#/components/schemas/PostStatus"
+          },
+          "postStatusUpdatedOnUtc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostOutputModelBaseResponse": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/PostOutputModel"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostOutputModelBaseResponseList": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PostOutputModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostStatus": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
       }
     }
   }

@@ -64,7 +64,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>Event ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPut]
-        public Task<BaseResponse<Guid>> Create([FromBody] EventInputModel model)
+        public Task<BaseResponse<int>> Create([FromBody] EventInputModel model)
         {
             throw new NotImplementedException();
         }
@@ -88,7 +88,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPost("{eventId:int}/Questions")]
-        public Task<BaseResponse<Guid>> Create(int eventId, [FromBody] EventQuestionInput model)
+        public Task<BaseResponse<int>> Create(int eventId, [FromBody] EventQuestionInput model)
         {
             throw new NotImplementedException();
         }
@@ -101,7 +101,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPut("{eventId:int}/Questions")]
-        public Task<BaseResponse<Guid>> Update(int eventId, [FromBody] EventQuestionInput model)
+        public Task<BaseResponse<int>> Update(int eventId, [FromBody] EventQuestionInput model)
         {
             throw new NotImplementedException();
         }

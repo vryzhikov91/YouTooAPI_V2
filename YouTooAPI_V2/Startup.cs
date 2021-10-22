@@ -10,7 +10,11 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using SignalRSwaggerGen;
+using SignalRSwaggerGen.Attributes;
+using YouTooAPI_V2.WebSocketHubs;
 
 namespace YouTooAPI_V2
 {
@@ -28,9 +32,11 @@ namespace YouTooAPI_V2
         {
 
             services.AddControllers();
+            services.AddSignalR();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "YouTooAPI_V2", Version = "v1" });
+                c.DocumentFilter<SignalRSwaggerGen.SignalRSwaggerGen>(new List<Assembly> { typeof(ChatHub).Assembly });
             });
         }
 
@@ -40,9 +46,10 @@ namespace YouTooAPI_V2
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "YouTooAPI_V2 v1"));
+               
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "YouTooAPI_V2 v1"));
 
             //app.UseHttpsRedirection();
 
@@ -53,6 +60,7 @@ namespace YouTooAPI_V2
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>(typeof(ChatHub).GetCustomAttribute<SignalRHubAttribute>()?.Path.Replace(Constants.HubNamePlaceholder, nameof(ChatHub)));
             });
         }
     }

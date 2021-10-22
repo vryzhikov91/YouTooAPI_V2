@@ -52,7 +52,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>Post ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPost]
-        public Task<BaseResponse<Guid>> Update([FromBody] PostInputModel model)
+        public Task<BaseResponse<int>> Update([FromBody] PostInputModel model)
         {
             throw new NotImplementedException();
         }
@@ -64,7 +64,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>Post ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPut]
-        public Task<BaseResponse<Guid>> Create([FromBody] PostInputModel model)
+        public Task<BaseResponse<int>> Create([FromBody] PostInputModel model)
         {
             throw new NotImplementedException();
         }

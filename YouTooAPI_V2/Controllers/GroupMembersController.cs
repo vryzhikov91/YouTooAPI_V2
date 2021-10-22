@@ -42,7 +42,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>GroupMember ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPost]
-        public Task<BaseResponse<Guid>> Update([FromBody] GroupMemberInputModel model)
+        public Task<BaseResponse<int>> Update([FromBody] GroupMemberInputModel model)
         {
             throw new NotImplementedException();
         }
@@ -54,7 +54,7 @@ namespace YouTooAPI_V2.Controllers
         /// <returns>GroupMember ID</returns>
         /// <exception cref="NotImplementedException"></exception>
         [HttpPut]
-        public Task<BaseResponse<Guid>> Create([FromBody] GroupMemberInputModel model)
+        public Task<BaseResponse<int>> Create([FromBody] GroupMemberInputModel model)
         {
             throw new NotImplementedException();
         }
